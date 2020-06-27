@@ -14,7 +14,7 @@
     name: mysql
     state: started
     enabled: yes
-##mysql secure installtion####
+##mysql secure installtion#####
 
 - name: set root password
   mysql_user:
