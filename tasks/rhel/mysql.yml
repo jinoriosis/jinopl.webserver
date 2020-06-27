@@ -20,7 +20,10 @@
     name: mysql
     state: started
     enabled: yes
-  tags: mysql
+  tags:
+    - mysql
+    - notest
+
 
 - name: Fetch temp root password
   command: awk '$0 ~ "temporary password" {print $11}' /var/log/mysqld.log
